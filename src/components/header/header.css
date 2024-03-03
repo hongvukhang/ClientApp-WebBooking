@@ -48,7 +48,8 @@
 }
 
 .headerSearch {
-  height: 30px;
+  min-height: 56px;
+  box-sizing: border-box;
   background-color: white;
   border: 3px solid #febb02;
   display: flex;
@@ -70,6 +71,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  max-width: 204px;
+  white-space: nowrap;
 }
 
 .headerSearchInput {
@@ -80,6 +83,8 @@
 .headerSearchText {
   color: lightgray;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .date {
@@ -125,4 +130,12 @@
 
 .optionCounterButton:disabled {
   cursor: not-allowed;
+}
+@media only screen and (max-width: 700px) {
+  .headerSearch {
+    flex-direction: column;
+  }
+  .headerSearchItem {
+    margin-bottom: 10px;
+  }
 }
