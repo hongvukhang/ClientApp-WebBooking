@@ -138,4 +138,7 @@
   .headerSearchItem {
     margin-bottom: 10px;
   }
+  .headerListItem span {
+    display: none;
+  }
 }

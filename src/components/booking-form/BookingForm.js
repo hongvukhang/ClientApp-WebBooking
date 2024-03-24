@@ -183,7 +183,7 @@ const BookingForm = ({ state, hotelId, user }) => {
           {state.map((room) => {
             return (
               <div key={room._id} className={classes["room-detail"]}>
-                <div>
+                <div style={{ flex: "1 0 300px" }}>
                   <h3 className={classes["room-detail_title"]}>{room.title}</h3>
                   <p className={classes["room-detail_desc"]}>{room.desc}</p>
                   <p className={classes["room-detail_maxpeople"]}>
